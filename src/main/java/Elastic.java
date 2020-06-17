@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Map;
 
 public class Elastic {
@@ -13,6 +15,10 @@ public class Elastic {
         String text = news.get("text");
         String url = news.get("url");
         String id = news.get("id");
+    }
+
+    public static List<String> getWords() {
+        return new ArrayList<>();
     }
 
 }

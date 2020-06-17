@@ -22,7 +22,7 @@ public class Parser {
 
     private static List<String> getUrls(Document doc) {
 
-        HashSet<String> urlHashSet = new HashSet<String>();
+        HashSet<String> urlHashSet = new HashSet<>();
 
         // выбираем все элементы <a class="entry__link">...
         Elements links = doc.select("a.entry__link");
