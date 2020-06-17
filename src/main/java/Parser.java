@@ -21,9 +21,7 @@ public class Parser {
     }
 
     private static List<String> getUrls(Document doc) {
-
         HashSet<String> urlHashSet = new HashSet<>();
-
         // выбираем все элементы <a class="entry__link">...
         Elements links = doc.select("a.entry__link");
         for (Element link : links) {
@@ -32,7 +30,6 @@ public class Parser {
             // добавляем ссылку в HashSet для фильтрации повторов
             urlHashSet.add(url);
         }
-
         // конвертируем HashSet в List
         return new ArrayList<>(urlHashSet);
     }

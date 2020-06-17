@@ -5,7 +5,7 @@ import java.util.List;
 public class Crawler {
 
     public static void main(String[] args) throws IOException {
-//        Parser.run();
+        Parser.run();
 
 //        news = crawler.db.get_news(crawler.id1)
 //        logger.info(f'Новость из БД с id={crawler.id1}:\n{news}')
